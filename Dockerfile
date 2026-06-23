@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Copiar pyproject.toml
 COPY pyproject.toml .
+COPY README.md .
 
 # Instalar dependencias en un directorio virtual
 RUN python -m venv /opt/venv && \
